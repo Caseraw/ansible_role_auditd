@@ -1,0 +1,5 @@
+# {{ ansible_managed }}
+
+{% for parameter in role_auditd_conf_file.parameters | default([]) %}
+{{ parameter }}
+{% endfor %}
